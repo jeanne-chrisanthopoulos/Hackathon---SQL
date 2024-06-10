@@ -1,6 +1,7 @@
 https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true
 
 #Specifically resulting in the names of the cities in american cities with population > 120000
+
 SELECT NAME
 FROM CITY
 WHERE COUNTRYCODE = 'USA'
