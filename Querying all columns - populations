@@ -1,5 +1,7 @@
 https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true
 
+#Querying all columns
+
 SELECT *
 FROM CITY
 WHERE COUNTRYCODE = 'USA'
