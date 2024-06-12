@@ -1,0 +1,18 @@
+https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true
+Given the table schemas below, write a query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees. Order your output by ascending company_code.
+
+Employee table (aliased as e) and the Company table (aliased as c)
+
+SELECT
+    e.company_code,
+    MAX(founder),
+    COUNT(DISTINCT lead_manager_code),
+    COUNT(DISTINCT senior_manager_code),
+    COUNT(DISTINCT manager_code),
+    COUNT(DISTINCT employee_code)
+FROM Employee e
+LEFT JOIN 
+Company c
+ON e.company_code = c.company_code
+GROUP BY e.company_code
+ORDER BY e.company_code;
